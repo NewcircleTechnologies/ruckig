@@ -23,6 +23,14 @@ Ruckig generates trajectories on-the-fly, allowing robots and machines to react 
 
 More information can be found at [ruckig.com](https://ruckig.com) and in the corresponding paper [Jerk-limited Real-time Trajectory Generation with Arbitrary Target States](https://arxiv.org/abs/2105.04830), accepted for the *Robotics: Science and Systems (RSS), 2021* conference.
 
+## Newcircle installation for using in embedded boards:
+```bash
+mkdir -p build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=../arm-cortex-m7-toolchain.cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+```
+
 
 ## Installation
 
